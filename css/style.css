@@ -1,0 +1,353 @@
+/* Style for Treehouse Graph */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #222222;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: "Open Sans", Arial;
+  background: #f9f9f9;
+}
+body a {
+  text-decoration: none;
+}
+body .team-treehouse h1, body .team-treehouse h2 {
+  text-align: center;
+}
+body .team-treehouse h2 {
+  font-weight: normal;
+}
+
+.pieChart {
+  width: 25.5em;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+.pie {
+  height: 12.5em;
+  width: 12.5em;
+  position: relative;
+  float: left;
+}
+.pie::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 7.5em;
+  height: 7.5em;
+  background: #f9f9f9;
+  border-radius: 50%;
+  top: 2.5em;
+  left: 2.5em;
+}
+
+.slice {
+  position: absolute;
+  width: 12.5em;
+  height: 12.5em;
+  clip: rect(0px, 12.5em, 12.5em, 6.25em);
+  animation: bake-pie 1s;
+}
+.slice span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 12.5em;
+  height: 12.5em;
+  border-radius: 50%;
+  clip: rect(0px, 12.5em, 12.5em, 6.25em);
+}
+
+.legend {
+  width: 13em;
+  padding-left: 1em;
+  float: left;
+}
+.legend ul {
+  list-style-type: none;
+  list-style-position: inside;
+  font-size: 0.8em;
+}
+.legend li {
+  height: 1.25em;
+  margin-bottom: 0.7em;
+  padding-left: 0.5em;
+  border-left: 1.25em solid black;
+}
+.legend em {
+  font-style: normal;
+}
+.legend span {
+  float: right;
+  font-weight: bold;
+}
+
+/* Custom CSS */
+body {
+  font: 400 15px/1.8 Lato, sans-serif;
+  color: #777;
+}
+
+h3, h4 {
+  margin: 10px 0 30px 0;
+  letter-spacing: 10px;
+  font-size: 20px;
+  color: #111;
+}
+
+.person {
+  border: 10px solid transparent;
+  margin-bottom: 25px;
+  width: 255px;
+  height: 255px;
+  opacity: 0.7;
+}
+
+.person:hover {
+  border-color: #f1f1f1;
+}
+
+.carousel-inner img {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  /* make all photos black and white */
+  width: 100%;
+  /* Set width to 100% */
+  margin: auto;
+}
+
+.carousel-caption h2 {
+  color: #FFA500 !important;
+  display: none;
+}
+
+.carousel-caption h1 {
+  color: #FF4500 !important;
+}
+
+.bg-1 {
+  background: #2d2d30;
+  color: #bdbdbd;
+}
+
+.bg-1 h3 {
+  color: #fff;
+}
+
+.bg-1 p {
+  font-style: italic;
+}
+
+.list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+
+.thumbnail p {
+  margin-top: 15px;
+  color: #555;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f1f1f1;
+  border-radius: 0;
+  transition: .2s;
+}
+
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+}
+
+.modal-header, h4, .close {
+  background-color: #333;
+  color: #fff !important;
+  text-align: center;
+  font-size: 30px;
+}
+
+.modal-header, .modal-body {
+  padding: 40px 50px;
+}
+
+.nav-tabs li a {
+  color: #777;
+}
+
+#googleMap {
+  width: 100%;
+  height: 400px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.navbar {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  font-size: 11px !important;
+  letter-spacing: 4px;
+  opacity: 0.9;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #d5d5d5 !important;
+}
+
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color: #29292c !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.open .dropdown-toggle {
+  color: #fff;
+  background-color: #555 !important;
+}
+
+.dropdown-menu li a {
+  color: #000 !important;
+}
+
+.dropdown-menu li a:hover {
+  background-color: red !important;
+}
+
+footer {
+  background-color: #2d2d30;
+  color: #f5f5f5;
+  padding: 32px;
+}
+
+footer a {
+  color: #f5f5f5;
+}
+
+footer a:hover {
+  color: #777;
+  text-decoration: none;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Card  */
+.pd-card {
+  width: 300px;
+  box-shadow: 0 18px 22px 0 rgba(0, 0, 0, 0.2), 0 20px 34px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+address {
+  padding: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-gray {
+  background-color: #DCDCDC;
+}
+
+footer p {
+  color: white;
+}
+
+.carousel p {
+  color: red;
+}
+
+.carousel-caption {
+  top: 10px;
+}
+
+#carouselButtons {
+  margin-left: 10px;
+  position: absolute;
+  top: 60px;
+  background-color: red;
+}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+  height: 720px;
+}
+
+.tab-pane {
+  padding: 25px;
+}
+
+.tab-pane ol {
+  padding: 25px;
+}
+
+.hide-btn {
+  display: none;
+}
+
+@media (max-width: 799px) {
+  .carousel-caption {
+    display: none;
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
+
+  .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+    height: auto;
+  }
+
+  .pd-card {
+    margin: auto;
+  }
+
+  #employers h2 {
+    text-align: center;
+  }
+}
